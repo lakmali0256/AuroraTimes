@@ -1,0 +1,66 @@
+.hero{
+    width: 100vw;
+    max-width: 100%;
+    background: #110f0f;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+
+.left{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    color: #f1f1f1; 
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  p {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: #f1f1f1; 
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+ }
+    
+  .button-explore {
+    display: inline-block;
+    background-color: #333; 
+    color: #f1f1f1; 
+    font-family: 'Georgia', serif; 
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: 1px solid #f1f1f1; 
+    border-radius: 15px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+  }
+  
+  .button-explore:hover {
+    background-color: #444; 
+    color: #fff;
+    border-color: #fff; 
+    transform: scale(1.05); 
+  }
+  
+
+  
+  
+  
