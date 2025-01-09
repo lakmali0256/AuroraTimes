@@ -1,0 +1,7 @@
+.cont{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 5rem 0;
+}

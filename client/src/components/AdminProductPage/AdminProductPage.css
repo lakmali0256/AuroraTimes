@@ -1,0 +1,207 @@
+/* AdminProductPage.css */
+
+/* General Styles */
+.admin-product-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 5rem;
+  }
+  
+  /* Banner Section */
+  .admin-product-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .admin-product-page .loading,
+  .admin-product-page .error {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff0000;
+  }
+  
+  .admin-product-page .loading {
+    font-size: 1.5rem;
+  }
+  
+  .admin-product-page .error {
+    font-size: 1.2rem;
+    color: red;
+  }
+  
+  /* Product Table */
+  .product-table {
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .product-table button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .product-table button:hover {
+    background-color: #218838;
+  }
+  
+  .product-table button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Edit Modal */
+  .edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit-modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .edit-modal label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .edit-modal input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-modal input:focus {
+    border-color: #007bff;
+  }
+  
+  .edit-modal button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .edit-modal button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-modal button:last-child {
+    background-color: #ccc;
+  }
+  
+  .edit-modal button:last-child:hover {
+    background-color: #bbb;
+  }
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logout-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f; /* Darker Red */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-table th,
+    .product-table td {
+      padding: 8px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .product-table button {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+  
+    .edit-modal-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .edit-modal input {
+      font-size: 0.9rem;
+    }
+  
+    .edit-modal button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

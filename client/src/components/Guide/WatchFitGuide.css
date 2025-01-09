@@ -1,0 +1,50 @@
+.watch-fit-guide {
+    max-width: 30vw;
+  }
+  
+  .background-image {
+    position: relative;
+  }
+  
+  .background-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    background-color: black;
+    color: white;
+  }
+  

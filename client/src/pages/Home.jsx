@@ -3,14 +3,20 @@ import Navbar from '../components/Navbar/Navbar'
 import Hero from '../components/Hero/Hero'
 import HotCollection from '../components/HotCollection/HotCollection'
 import Footer from '../components/Footer/Footer'
+import SpecialOfferCard from '../components/SpecialOffer/SpecialOfferCard'
+import Knowledge from '../components/Knowlege/Knowledge'
+import Men from '../components/Men/Men'
+import Women from '../components/Women/Women'
 
 function Home() {
   return (
     <div>
-        <Navbar/>
         <Hero/>
         <HotCollection/>
-        <Footer/>
+        <SpecialOfferCard/>
+        <Men/>
+        <Knowledge/>
+        <Women/>
     </div>
   )
 }

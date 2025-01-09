@@ -1,29 +1,28 @@
-import React from 'react'
-import './ProductCard.css'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './ProductCard.css';
 
-function ProductCard({id,image, availability, price, disprice, description}) {
-    const handleClick = () => { 
-    };
+const ProductCard = ({ id, title, model, price, discount, isNew, imageUrl }) => {
   return (
-    <div className='product-card-cont'>
-        <div className='card-image-container'>
-            <div className='card-header'>
-                <p className="title">{availability}</p>
-                <div>
-                    <button className="card-btn-on-image">+</button>
-                </div>
-            </div>
-            <img src={image} alt='product' className='p-image'/>     
-        </div>
-        <div className='card-desc ' onClick={handleClick}>
-            {description}
-        </div>
-        <div className='price-list' onClick={handleClick}>
-            <span className='dis-price'>{disprice}</span>
-            <span className='price'>{price}</span>
-        </div>
+    <div className="single-product">
+      <div className="part-1">
+        {/* Link the product to the Single Product Page */}
+        <Link to={`/product/${id}`} className="product-link">
+          <img src={imageUrl} alt={title} className="product-image" />
+        </Link>
+        {discount && <div className="discount">{discount}% OFF</div>}
+        {isNew && <div className="new">New</div>}
+      </div>
+      <div className="part-2">
+        <h4 className="product-title">{title}</h4>
+        {discount > 0 && <span className="product-old-price">{price}</span>}
+        <span className="product-price">{price - price * discount / 100}</span>
+      </div>
+      <div>
+        <button className='button'>Add to cart</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;
